@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 export default function Community() {
   return (
-    <section className="py-24 px-4 relative overflow-hidden">
+    <section className="py-24 px-4 relative overflow-hidden" id='community'>
       {/* Background Effect */}
       <div className="absolute inset-0 cyber-pattern opacity-50" />
       <motion.div
@@ -44,7 +44,7 @@ export default function Community() {
               whileTap={{ scale: 0.95 }}
               transition={{ type: "spring", stiffness: 300, damping: 10 }}
             >
-              <Button size="lg" className="px-8 py-4 text-lg font-medium bg-blue-600 hover:bg-blue-700 glow-effect">
+              <Button size="lg" className="px-8 py-4 text-lg text-white font-medium bg-blue-600 hover:bg-blue-700 glow-effect">
                 Join Our Community
               </Button>
             </motion.div>

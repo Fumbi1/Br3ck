@@ -2,20 +2,26 @@
 
 import { motion } from 'framer-motion';
 import { Twitter, Github } from 'lucide-react';
+import { Url } from 'next/dist/shared/lib/router/router';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 const footerSections = [
   {
-    title: "Our Offerings",
+    title: "Why Br3ck",
+    id: "#whybr3ck"
   },
   {
-    title: "Opportunities",
+    title: "Our Offerings",
+    id: "#offerings"
   },
   {
     title: "How We Work",
+    id: "#how-we-work"
   },
   {
     title: "Join Community",
+    id: "#community"
   }
 ];
 
@@ -25,6 +31,9 @@ const socialLinks = [
 ];
 
 export default function Footer() {
+
+  const router = useRouter()
+
   return (
     <footer className="bg-card/30 backdrop-blur-sm border-t border-border/50 py-16 px-4">
       <div className="max-w-7xl mx-auto">
@@ -57,6 +66,7 @@ export default function Footer() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 + 0.2 }}
                 className='cursor-pointer'
+                onClick={() => router.push(section.id)}
               >
                 <p className="text-sm text-white mb-4">
                   {section.title}
@@ -85,7 +95,7 @@ export default function Footer() {
 
         {/* Bottom Footer */}
         <motion.div
-          className="pt-8 border-t border-border/50 flex flex-col gap-4 md:gap-0 md:flex-row-reverse items-center justify-between gap-4"
+          className="pt-8 border-t border-border/50 flex flex-col md:gap-0 md:flex-row-reverse items-center justify-between gap-4"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.8 }}

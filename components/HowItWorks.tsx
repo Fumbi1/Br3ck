@@ -32,7 +32,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section className="py-24 px-4 max-w-6xl mx-auto">
+    <section className="py-24 px-4 max-w-6xl mx-auto" id='how-we-work'>
       <AnimatedSection className="text-center mb-16">
         <motion.div 
           className="text-sm font-medium text-white tracking-wider mb-4 brightness-[75%]"

@@ -9,7 +9,7 @@ import { Button } from './ui/button';
 const offerings = [
   {
     title: "Web3 Fundamentals",
-    description: "Master the core concepts of blockchain, DeFi, and smart contracts from the ground up.",
+    description: "Master the core concepts of blockchain, cryptocurrencies, and decentralized applications.",
     image: "/image.svg",
     category: "Foundation"
   },
@@ -21,37 +21,37 @@ const offerings = [
   },
   {
     title: "Co-Working Hub",
-    description: "Collaborate, network, and build on Web3 projects from our space for innovative blockchain products.",
+    description: "Collaborate, network, and build in our Web3-focused hub — a space for co-working, hosting events, and creating innovative blockchain products.",
     image: "/image-2.svg",
     category: "Collaboration"
   },
   {
     title: "Crypto Business Development",
     description: "Understand tokenomics, governance models, and how to build sustainable crypto businesses.",
-    image: "/image-3.svg",
+    image: "/image-6.svg",
     category: "Business"
   },
   {
     title: "Web3 Development",
-    description: "Master Dapp Development, smart contract development, and blockchain security.",
+    description: "Master smart contracts, dApps, DeFi protocols, and blockchain security.",
     image: "/image-4.svg",
     category: "Development"
   },
   {
     title: "Creative & Design Skills",
-    description: "Learn how to create and design NFTs, game assets and immersive Web3 visuals.",
-    image: "/image-5.svg",
+    description: "Learn to create 2D/3D art, game assets, and immersive Web3 visuals.",
+    image: "/image-3.svg",
     category: "Design"
   },
   {
     title: "Marketing & Content",
-    description: "Build comprehensive NFT marketing strategies and blockchain content marketing.",
-    image: "/image-6.svg",
+    description: "Build viral campaigns, NFT stories, and powerful brand messaging.",
+    image: "/modd.svg",
     category: "Marketing"
   },
   {
     title: "Advanced Tech Tracks",
-    description: "Advanced technologies including zero-knowledge proofs and blockchain interoperability.",
+    description: "Explore AI + Web3, cross-chain tools, and real-world tokenization.",
     image: "/image-7.svg",
     category: "Advanced"
   }
@@ -59,7 +59,7 @@ const offerings = [
 
 export default function Offerings() {
   return (
-    <section className="py-24 px-4 max-w-7xl mx-auto">
+    <section className="py-24 px-4 max-w-7xl mx-auto" id='offerings'>
       <AnimatedSection className="text-center mb-16">
         <motion.div
           className="text-sm font-medium text-white tracking-wider mb-4 brightness-[75%]"
@@ -81,14 +81,14 @@ export default function Offerings() {
         </p>
       </AnimatedSection>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 place-content-center">
         {offerings.map((offering, index) => (
           <AnimatedSection key={index} delay={index * 0.1}>
             <motion.div
               whileHover={{ y: -8, scale: 1.02 }}
               transition={{ type: "spring", stiffness: 300, damping: 10 }}
             >
-              <Card className="pt-0 h-[407.3px] glass-card border-border/50 hover:border-blue-500/30 transition-all duration-300 group overflow-hidden">
+              <Card className="pt-0 h-[407.3px] w-fit max-w-[415px] glass-card border-border/50 hover:border-blue-500/30 transition-all duration-300 group overflow-hidden">
 
                 <div className="relative h-fit bg-gradient-to-br from-blue-900/20 to-blue-600/20 overflow-hidden">
                   <Image src={offering.image} alt='opps!' width={415} height={233}/>

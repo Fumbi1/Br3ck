@@ -10,7 +10,7 @@ import Image from 'next/image';
 const features = [
   {
     icon: "Frame.svg",
-    title: "Expert-Led Curriculum",
+    title: `Expert-Led Curriculum`,
     description: "Learn from industry-leading experts with a curriculum designed for the future of Web3."
   },
   {
@@ -27,7 +27,7 @@ const features = [
 
 export default function WhyBr3ck() {
   return (
-    <section className="py-24 px-4 max-w-7xl mx-auto">
+    <section className="py-24 px-4 max-w-7xl mx-auto" id='whybr3ck'>
       <AnimatedSection className="text-center mb-16">
         <motion.div
           className="text-sm font-medium text-white tracking-wider mb-4 brightness-[75%]"
@@ -60,7 +60,7 @@ export default function WhyBr3ck() {
               whileHover={{ y: -10, scale: 1.02 }}
               transition={{ type: "spring", stiffness: 300, damping: 10 }}
             >
-              <Card className="h-[333px] glass-card border-border/50 hover:border-blue-500/30 transition-all duration-300">
+              <Card className="h-[375px] glass-card border-border/50 hover:border-blue-500/30 transition-all duration-300">
                 <CardContent className="p-8 text-left">
                   <motion.div
                     className="mb-6 inline-block rounded-none"

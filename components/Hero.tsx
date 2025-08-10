@@ -10,9 +10,9 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden cyber-pattern">
       {/* Background Effects */}
       <div className="absolute inset-0">
-        <motion.div 
+        <motion.div
           className="absolute inset-0 opacity-30"
-          animate={{ 
+          animate={{
             background: [
               'radial-gradient(circle at 20% 80%, rgba(59, 130, 246, 0.1) 0%, transparent 50%)',
               'radial-gradient(circle at 80% 20%, rgba(59, 130, 246, 0.15) 0%, transparent 50%)',
@@ -58,8 +58,8 @@ export default function Hero() {
           transition={{ duration: 0.8, type: "spring", stiffness: 100 }}
           className="mb-8"
         >
-          <motion.div 
-            className="inline-flex flex-col gap-3 items-center gap-2 mb-4"
+          <motion.div
+            className="inline-flex flex-col gap-3 items-center mb-4"
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
@@ -106,10 +106,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
         >
-          <Button 
-            size="lg" 
-            className="text-white px-2 py-2 text-lg font-medium bg-[#4478D7] hover:bg-[#166DC1] transition-all duration-200 hover:scale-105 glow-effect"
-          >
+          <Button size="lg" className="px-8 py-4 text-lg text-white font-medium bg-blue-600 hover:bg-blue-700 glow-effect">
             Join Our Community
           </Button>
         </motion.div>
