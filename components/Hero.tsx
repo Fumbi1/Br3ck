@@ -2,12 +2,17 @@
 
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
-import { Hexagon } from 'lucide-react';
 import Image from 'next/image';
+import { useCallback } from 'react';
 
 export default function Hero() {
+
+  const goToTelegram = useCallback(() => {
+      window.open("https://t.me/br3ckxyz", "_blank", "noopener,noreferrer");
+    }, []);
+
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden cyber-pattern">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden cyber-pattern px-[6.25%]">
       {/* Background Effects */}
       <div className="absolute inset-0">
         <motion.div
@@ -106,7 +111,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
         >
-          <Button size="lg" className="px-8 py-4 text-lg text-white font-medium bg-blue-600 hover:bg-blue-700 glow-effect">
+          <Button size="lg" className="px-8 py-4 text-lg text-white font-medium bg-blue-600 hover:bg-blue-700 glow-effect" onClick={goToTelegram}>
             Join Our Community
           </Button>
         </motion.div>

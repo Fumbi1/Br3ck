@@ -4,10 +4,16 @@ import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import AnimatedSection from './AnimatedSection';
 import Image from 'next/image';
+import { useCallback } from 'react';
 
 export default function Community() {
+
+  const goToTelegram = useCallback(() => {
+    window.open("https://t.me/br3ckxyz", "_blank", "noopener,noreferrer");
+  }, []);
+
   return (
-    <section className="py-24 px-4 relative overflow-hidden" id='community'>
+    <section className="py-24 px-[6.25%] relative overflow-hidden" id='community'>
       {/* Background Effect */}
       <div className="absolute inset-0 cyber-pattern opacity-50" />
       <motion.div
@@ -24,10 +30,10 @@ export default function Community() {
             transition={{ type: "spring", stiffness: 300, damping: 10 }}
           >
             <div className='w-full h-full absolute left-0 top-0 z-[-1]'>
-              <Image src={"/comm-img.png"} alt='' fill className='object-cover object-center rounded-3xl'/>
+              <Image src={"/comm-img.png"} alt='' fill className='object-cover object-center rounded-3xl' />
             </div>
             <div className='w-full h-full absolute left-0 top-0 z-[-1]'>
-              <Image src={"/Rectangle.png"} alt='' fill className='object-cover object-center rounded-3xl'/>
+              <Image src={"/Rectangle.png"} alt='' fill className='object-cover object-center rounded-3xl' />
             </div>
             <h2 className="text-4xl md:text-6xl font-bold mb-6 text-white">
               Join the BR3CK Community
@@ -44,7 +50,7 @@ export default function Community() {
               whileTap={{ scale: 0.95 }}
               transition={{ type: "spring", stiffness: 300, damping: 10 }}
             >
-              <Button size="lg" className="px-8 py-4 text-lg text-white font-medium bg-blue-600 hover:bg-blue-700 glow-effect">
+              <Button size="lg" className="px-6 md:px-8 py-4 w-fit text-sm md:text-lg text-white font-medium bg-blue-600 hover:bg-blue-700 glow-effect" onClick={goToTelegram}>
                 Join Our Community
               </Button>
             </motion.div>

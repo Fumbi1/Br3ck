@@ -59,7 +59,7 @@ const offerings = [
 
 export default function Offerings() {
   return (
-    <section className="py-24 px-4 max-w-7xl mx-auto" id='offerings'>
+    <section className="py-24 px-[6.25%] max-w-7xl mx-auto" id='offerings'>
       <AnimatedSection className="text-center mb-16">
         <motion.div
           className="text-sm font-medium text-white tracking-wider mb-4 brightness-[75%]"
@@ -81,7 +81,7 @@ export default function Offerings() {
         </p>
       </AnimatedSection>
 
-      <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 place-content-center">
+      <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 place-items-center">
         {offerings.map((offering, index) => (
           <AnimatedSection key={index} delay={index * 0.1}>
             <motion.div

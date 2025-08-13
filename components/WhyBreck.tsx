@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 import { Card, CardContent } from '@/components/ui/card';
-import { GraduationCap, Users, Target } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
 import { Button } from './ui/button';
 import Image from 'next/image';
@@ -27,7 +26,7 @@ const features = [
 
 export default function WhyBr3ck() {
   return (
-    <section className="py-24 px-4 max-w-7xl mx-auto" id='whybr3ck'>
+    <section className="py-24 px-[6.25%] max-w-7xl mx-auto" id='whybr3ck'>
       <AnimatedSection className="text-center mb-16">
         <motion.div
           className="text-sm font-medium text-white tracking-wider mb-4 brightness-[75%]"

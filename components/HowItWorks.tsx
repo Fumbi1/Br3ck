@@ -9,7 +9,7 @@ import Image from 'next/image';
 
 const steps = [
   {
-    icon: "Icon.svg",
+    icon: "IconA.svg",
     title: "Apply & Enroll",
     description: "Join our highly selective program designed to nurture emerging talents. Whether you're new to Web3 or looking to advance your career."
   },
@@ -32,7 +32,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section className="py-24 px-4 max-w-6xl mx-auto" id='how-we-work'>
+    <section className="py-24 px-[6.25%] max-w-6xl mx-auto" id='how-we-work'>
       <AnimatedSection className="text-center mb-16">
         <motion.div 
           className="text-sm font-medium text-white tracking-wider mb-4 brightness-[75%]"
@@ -62,7 +62,7 @@ export default function HowItWorks() {
               transition={{ type: "spring", stiffness: 300, damping: 10 }}
               className="relative"
             >
-              <Card className="h-[288px] glass- bg-[#FFFFFF33] border-border/50 hover:border-blue-500/30 transition-all duration-300 pt-6">
+              <Card className="h-[350px] glass- bg-[#FFFFFF33] border-border/50 hover:border-blue-500/30 transition-all duration-300 pt-6">
                 <CardHeader>
                   <motion.div
                     className="mb-4 inline-block p-0 rounded-none w-fit"

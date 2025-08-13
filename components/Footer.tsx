@@ -35,7 +35,7 @@ export default function Footer() {
   const router = useRouter()
 
   return (
-    <footer className="bg-card/30 backdrop-blur-sm border-t border-border/50 py-16 px-4">
+    <footer className="bg-card/30 backdrop-blur-sm border-t border-border/50 py-16 px-[6.25%]">
       <div className="max-w-7xl mx-auto">
         {/* Main Footer Content */}
         <div className="w-full flex flex-col md:flex-row justify-between items-center gap-12 mb-12">
